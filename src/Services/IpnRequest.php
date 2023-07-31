@@ -1,6 +1,6 @@
 <?php
 
-namespace Clickpaysa\Laravel_clickpay\Services;
+namespace Clickpaysa\Laravel_package\Services;
 
 use Illuminate\Http\Request;
 
