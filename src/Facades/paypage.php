@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Clickpaysa\Laravel_package\Facades;
+namespace Dqburst\Laravel_clickpay\Facades;
 
 
 use Illuminate\Support\Facades\Facade;

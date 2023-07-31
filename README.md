@@ -23,7 +23,7 @@ This Package requires no external dependencies.
 
 INSTALLATION
 ------------
-- composer require clickpaysa/laravel_package
+- composer require Dqburst/Laravel_clickpay
 
 CONFIGURATION
 -------------
@@ -31,7 +31,7 @@ CONFIGURATION
 
 * Go to _config/app.php_ and in the providers array add
 
-        Clickpaysa\Laravel_package\PaypageServiceProvider::class,
+        Dqburst\Laravel_clickpay\PaypageServiceProvider::class,
 
 * Create the package config file:
 
@@ -57,7 +57,7 @@ Usage
 
 * create pay page
 
-        use Clickpaysa\Laravel_package\Facades\paypage;
+        use Dqburst\Laravel_clickpay\Facades\paypage;
 
         $pay= paypage::sendPaymentCode('all')
                ->sendTransaction('sale')
@@ -181,7 +181,7 @@ Now, you need to configure the plugin with the class\method that will grab the p
             $status= $requestData->getStatus();
             //your logic .. updating cart in DB, notifying the customer ...etc
         }
-you can also get transaction reference number. To get the list of available properties check: _Clickpaysa\Laravel__clickpay\IpnRequest_ class.
+you can also get transaction reference number. To get the list of available properties check: _Dqburst\Laravel__clickpay\IpnRequest_ class.
 
 
 

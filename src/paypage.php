@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Clickpaysa\Laravel_package;
+namespace Dqburst\Laravel_clickpay;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Log;
 

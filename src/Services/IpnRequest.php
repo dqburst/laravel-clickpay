@@ -1,6 +1,6 @@
 <?php
 
-namespace Clickpaysa\Laravel_package\Services;
+namespace Dqburst\Laravel_clickpay\Services;
 
 use Illuminate\Http\Request;
 
@@ -43,9 +43,9 @@ class IpnRequest
     private function isValidIPNRequest($httpRequest){
         $signature= $httpRequest->header('signature');
         $content= $httpRequest->getContent(); //get the request raw content
-        new \Clickpaysa\Laravel_clickpay\clickpay_core(); //this is a hack just to be able to use `ClickpayApi` class from clickpay_core.php !!!
+        new \Dqburst\Laravel_clickpay\clickpay_core(); //this is a hack just to be able to use `ClickpayApi` class from clickpay_core.php !!!
 
-        $paytabs_api= \Clickpaysa\Laravel_clickpay\ClickpayApi::getInstance(config('clickpay.region'), config('clickpay.profile_id'), config('clickpay.server_key'));
+        $paytabs_api= \Dqburst\Laravel_clickpay\ClickpayApi::getInstance(config('clickpay.region'), config('clickpay.profile_id'), config('clickpay.server_key'));
         if($paytabs_api->is_valid_ipn($content, $signature)){
             return true;
         }else{

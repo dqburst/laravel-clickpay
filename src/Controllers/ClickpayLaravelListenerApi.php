@@ -1,10 +1,10 @@
 <?php
 
-namespace Clickpaysa\Laravel_package\Controllers;
+namespace Dqburst\Laravel_clickpay\Controllers;
 
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Http\Request;
-use Clickpaysa\Laravel_package\Services\IpnRequest;
+use Dqburst\Laravel_clickpay\Services\IpnRequest;
 
 class ClickpayLaravelListenerApi extends BaseController
 {

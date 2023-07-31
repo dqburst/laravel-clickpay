@@ -1,6 +1,6 @@
 <?php
 
-namespace Clickpaysa\Laravel_package;
+namespace Dqburst\Laravel_clickpay;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -20,7 +20,7 @@ class PaypageServiceProvider extends ServiceProvider
             __DIR__ . '/config/config.php', 'clickpay'
         );
 
-        $this->app->make(\Clickpaysa\Laravel_package\Controllers\ClickpayLaravelListenerApi::class);
+        $this->app->make(\Dqburst\Laravel_clickpay\Controllers\ClickpayLaravelListenerApi::class);
     }
 
     /**
